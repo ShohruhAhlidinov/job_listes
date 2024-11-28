@@ -86,6 +86,9 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .job-lists__item {
 	max-width: 1100px;
@@ -176,4 +179,119 @@ a {
 	color: var(--main-color);
 	padding: 0.4rem 0.8rem;
 	background-color: var(--body-bg);
+}
+@media screen and (max-width: 900) {
+	.site-heared {
+		min-height: 100px;
+	}
+	.main-content {
+		padding-top: 6rem;
+		padding-bottom: 8rem;
+	}
+
+	.job-lists__item {
+		padding: 2.8rem 3.6rem;
+	}
+
+	.job-lists__item:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+	.job-lists__img {
+		margin-right: 2.4rem;
+		width: 80px;
+		height: 80px;
+	}
+
+	.job-lists__title4 {
+		margin-right: 1.2rem;
+	}
+	.job-lists__news {
+		padding: 0.4rem 0.6rem;
+		border-radius: 1rem;
+	}
+	.job-lists__news-color {
+		margin-right: 0.6rem;
+	}
+	.job-lists__title {
+		font-size: 1.6rem;
+		margin-bottom: 0.6rem;
+	}
+
+	.job-lists__info-bottom span:not(:last-child):after {
+		margin-left: 1.2rem;
+		margin-right: 1.2rem;
+	}
+	.job-listen__btn-inner:not(:last-child) {
+		margin-right: 1.2rem;
+	}
+	.job-listen__btn-inner a {
+		padding: 0.4rem 0.6rem;
+	}
+}
+@media screen and (max-width: 800) {
+	.main-content {
+		padding-top: 5rem;
+		padding-bottom: 6.6rem;
+	}
+	.job-lists {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.job-lists__item {
+		padding: 2rem 3rem;
+	}
+	.job-lists__item:not(:last-child) {
+		margin-bottom: 1.6rem;
+	}
+	.job-lists__img {
+		margin-right: 1.6rem;
+		width: 60px;
+		height: 60px;
+	}
+	.job-lists__title4 {
+		margin-right: 1rem;
+	}
+	.job-lists__info-bottom span:not(:last-child):after {
+		display: inline-block;
+		height: 0.6px;
+		width: 0.6px;
+	}
+	.job-listen__btn-inner:not(:last-child) {
+		margin-right: 0.6rem;
+	}
+}
+@media screen and (max-width: 720) {
+	.job-lists__item {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		position: relative;
+		padding-top: 4.8rem;
+		margin-bottom: 5rem;
+	}
+	.job-lists__item:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+	.job-lists__img {
+		position: absolute;
+		top: -2.4rem;
+	}
+
+	.job-listen__btn {
+		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.job-listen__btn-inner {
+		margin-bottom: 1rem;
+	}
+}
+@media screen and (max-width: 720) {
+	.job-lists__img {
+		height: 4.8rem;
+		width: 4.8rem;
+	}
 }
