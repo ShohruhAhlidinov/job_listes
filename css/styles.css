@@ -4,7 +4,22 @@
 	--title-color: #2b3939;
 	--white-color: #ffffff;
 	--header-bg: #5ca5a5;
-	--body-bg: rgba(92, 165, 165, 0.5);
+	--body-bg: rgba(92, 165, 165, 0.1);
+}
+@font-face {
+	font-family: 'League Spartan';
+	src: url('..fonts/LeagueSpartan-SemiBold.woff2') format('woff2'), url('..fonts/LeagueSpartan-SemiBold.woff2') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'League Spartan';
+	src: url('..fonts/LeagueSpartan-Medium.woff2') format('woff2'), url('..fonts/LeagueSpartan-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 html {
@@ -18,6 +33,7 @@ html {
 *::before {
 	box-sizing: inherit;
 }
+
 body {
 	font-family: 'Spratan', sans-serif;
 	font-weight: 500;
@@ -35,11 +51,129 @@ body {
 	padding-right: 2rem;
 	color: var(--main-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 .site-heared {
 	background-image: url(../img/back.jpg);
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 	background-size: cover;
 	background-position: center center;
 	min-height: 156px;
 }
-/* Spartan 500,700 > */
+/*MAIN*/
+.main-content {
+	padding-top: 7.6rem;
+	padding-bottom: 12rem;
+}
+.job-lists {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.job-lists__item {
+	max-width: 1100px;
+	width: 100%;
+	background-color: var(--white-color);
+	padding: 2.4rem 4rem;
+	box-shadow: 0px 15px 20px -5px #0d718226;
+	border-radius: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+.job-lists__item:nth-child(1) {
+	border-left: 5px solid var(--main-color);
+}
+.job-lists__item:nth-child(2) {
+	border-left: 5px solid var(--main-color);
+}
+.job-lists__item:not(:last-child) {
+	margin-bottom: 2.4rem;
+}
+.job-lists__img {
+	margin-right: 2.4rem;
+	width: 88px;
+	height: 88px;
+	object-fit: cover;
+}
+.job-lists__info {
+	margin-right: auto;
+}
+.job-lists__info-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+.job-lists__title4 {
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: var(--main-color);
+	margin-right: 1.6rem;
+}
+.job-lists__news {
+	padding: 0.4rem 0.8rem;
+	background-color: var(--main-color);
+	color: var(--white-color);
+	border-radius: 1.2rem;
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-align: center;
+}
+.job-lists__news-color {
+	margin-right: 0.8rem;
+	background-color: var(--title-color);
+}
+.job-lists__title {
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: var(--title-color);
+	margin-bottom: 0.8rem;
+}
+.job-lists__info-bottom {
+	display: flex;
+	align-items: center;
+}
+.job-lists__info-bottom span {
+	color: var(--text-color);
+	display: inline-block;
+	align-items: center;
+}
+.job-lists__info-bottom span:not(:last-child):after {
+	display: inline-block;
+	height: 4px;
+	width: 4px;
+	border-radius: 50%;
+	background-color: var(--text-color);
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
+}
+.job-listen__btn {
+	display: flex;
+	align-items: center;
+}
+.job-listen__btn-inner:not(:last-child) {
+	margin-right: 1.6rem;
+}
+.job-listen__btn-inner a {
+	font-weight: 700;
+	font-size: 1.3rem;
+	color: var(--main-color);
+	padding: 0.4rem 0.8rem;
+	background-color: var(--body-bg);
+}
